@@ -1,8 +1,18 @@
 const http = require('http');
 // tweo args call back function req and res
 const fs = require('fs');
+///require lodash
+const _ = require('lodash');
+////////////
+
 const server = http.createServer((req,res) =>{
-    console.log(req.url, req.method);
+    //lodash
+    const num = _.random(0,20);
+    console.log(num);
+    const greet = _.once(() =>{
+        console.log('Hello!')
+    });
+    greet();
                                                                                             // response is used to send a response. 
                                                                                             // fomulate the response headers 
                                                                                             // what type of data were sending back

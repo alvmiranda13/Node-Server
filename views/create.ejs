@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <%- include('./partials/head.ejs') %>
+
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <%- include('./partials/nav.ejs') %>  
+
+    <div class="create-blog content">
+        <form action="">
+            <label for="title">Blog Title:</label>
+            <input type="text" id="text" required>
+            <label for="snippet">Blog Snippet:</label>
+            <input type="text" id="snippet" required>
+            <label for="body">Blog Body:</label>
+            <textarea id="body" required></textarea>
+            <button>Submit</button>
+        </form>
+    </div>
+        <script src="" async defer></script>
+        <%- include('./partials/footer.ejs') %>
+    </body>
+</html>
